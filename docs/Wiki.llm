@@ -1,0 +1,163 @@
+# TEAMLEMETRY - SYSTEM WIKI
+
+## Core Thesis
+
+Engineering organizations are Sequential Probability Networks.
+
+A software delivery organization is not a collection of isolated tasks.
+It is a probabilistic dependency graph where downstream output depends on upstream reliability.
+
+Teamlemetry exists to answer one operating question:
+
+Where is the delivery chain destabilizing?
+
+It does not exist to rank humans by activity volume.
+It exists to model delivery physics, coordination risk, queue pressure, topology instability, and stabilization opportunities.
+
+## Core Equation
+
+P(system) = product(p_i)
+
+The probability of successful delivery equals the compounded reliability of each dependent node in the delivery chain.
+
+If a chain has five dependent nodes with reliabilities of 0.98, 0.95, 0.92, 0.90, and 0.85, then:
+
+P(system) = 0.98 * 0.95 * 0.92 * 0.90 * 0.85 = 0.655
+
+A delivery chain can look locally healthy while being globally fragile.
+
+## Core Concepts
+
+Sequential Probability
+
+The probability of successful delivery across an ordered dependency chain. Each downstream step inherits uncertainty from upstream steps.
+
+O-Ring Invariant
+
+A single low-reliability dependent node can destabilize the whole delivery chain, even when every other node is strong.
+
+Queue Saturation
+
+The condition where arrival rate approaches or exceeds service capacity. As utilization approaches 1, wait time and instability rise nonlinearly.
+
+Coordination Entropy
+
+The amount of disorder introduced by communication fragmentation, unclear ownership, handoff ambiguity, and repeated context reconstruction.
+
+Topology Collapse
+
+A failure mode where the team, service, ownership, or dependency graph no longer supports reliable delivery because critical paths are overloaded, ambiguous, or cyclic.
+
+Cognitive Saturation
+
+The point where a person, team, or role is carrying more active context than it can process reliably.
+
+Observation Latency
+
+The time between a destabilizing event and the system's ability to detect, classify, and report it.
+
+AI Stabilization
+
+The use of deterministic AI-assisted workflows to reduce variance, compress feedback loops, standardize repeated work, and stabilize dependency chains.
+
+Dependency Density
+
+The concentration of required upstream relationships per delivery unit. Higher density increases coordination cost and failure propagation risk.
+
+Delivery Confidence
+
+A probabilistic estimate of whether a delivery chain will complete successfully within expected quality, time, and coordination constraints.
+
+## AI Philosophy
+
+AI is modeled as a deterministic variance reduction mechanism.
+
+sigma^2_AI -> 0
+
+AI does not replace human cognition universally.
+AI stabilizes stochastic dependency chains.
+
+AI is useful where work can be normalized, checked, repeated, simulated, summarized, routed, or constrained by explicit operating doctrine.
+
+AI is not assumed to be correct by default.
+AI output must be bounded by contracts, source-of-truth data, validation gates, audit trails, and human governance where the decision carries organizational risk.
+
+## Organizational Modeling
+
+The system models:
+
+- dependency graphs
+- communication topology
+- queue dynamics
+- coordination latency
+- interruption density
+- delivery fidelity
+- blocker propagation
+- role bottlenecks
+- topology instability
+- operational reporting paths
+
+The model treats engineering delivery as a distributed system composed of people, teams, services, queues, tools, policies, review gates, deployments, and incident feedback loops.
+
+## Explicit Non-Goals
+
+The platform does NOT:
+
+- track keystrokes
+- monitor webcams
+- score human worth
+- measure employee loyalty
+- optimize surveillance
+- infer private intent
+- rank people by vanity activity
+- replace management judgment with opaque scoring
+
+The platform models systems behavior only.
+
+## Telemetry Sources
+
+GitHub
+GitLab
+Bitbucket
+Jira
+Slack
+ClickUp
+Monday
+CI/CD
+Deployments
+Incident Systems
+
+V1 connector priority is:
+
+1. GitHub
+2. Jira
+3. Slack
+
+Telemetry fidelity comes before dashboards, ML, LLM orchestration, or agent swarms.
+
+## Key Outputs
+
+Delivery Confidence
+Topology Risk
+Queue Saturation
+Role Recommendations
+Dependency Bottlenecks
+Coordination Failure Detection
+AI Stabilization Opportunities
+Sequential Reliability
+Cognitive Load Signals
+Slack Operational Reports
+
+## Operating Doctrine
+
+Teamlemetry must preserve the distinction between system diagnosis and employee surveillance.
+
+Correct question:
+
+Where is the delivery chain destabilizing?
+
+Incorrect question:
+
+Who wrote more code?
+
+Every model, metric, connector, dashboard, recommendation, and report must preserve that boundary.
