@@ -8,6 +8,7 @@ Start here when building or reviewing Teamlemetry.
 - [Team Topology Method Data Model](./Team_Topology_Method_Data_Model.md): telemetry-derived base signals, structural metrics, topology health score, archetypes, interaction modes, dashboard cadence, and governance rules.
 - [System Operating Doctrine Data](./System_Operating_Doctrine_Data.md): confidential-title-redacted doctrine data imported under a neutral implementation filename.
 - [CTO Interface Source Map](./CTO_Interface_Source_Map.md): approved mapping from the Engineering doctrine site data into Teamlemetry CTO dashboard and reporting components.
+- [Engineering Formula Catalog](./Engineering_Formula_Catalog.md): ported formula catalog from the Engineering doctrine source, mapped to Teamlemetry engines, dashboard components, tests, and implementation order.
 
 ## Agentic System Doctrine
 
