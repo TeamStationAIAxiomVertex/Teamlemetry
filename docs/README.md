@@ -6,6 +6,7 @@ Start here when building or reviewing Teamlemetry.
 
 - [V1 System Specification](./V1_System_Specification.md): first working version scope, event schema, topology graph, engines, storage, APIs, Slack reporting, and MVP dashboard.
 - [Team Topology Method Data Model](./Team_Topology_Method_Data_Model.md): telemetry-derived base signals, structural metrics, topology health score, archetypes, interaction modes, dashboard cadence, and governance rules.
+- [System Operating Doctrine Data](./System_Operating_Doctrine_Data.md): confidential-title-redacted doctrine data imported under a neutral implementation filename.
 
 ## Agentic System Doctrine
 
